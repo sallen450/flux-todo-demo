@@ -28,7 +28,7 @@ var TodoTextInput = React.createClass({
     _onChange: function(event) {
         this.setState({
             value: event.target.value,
-        })
+        });
     },
 
     _onKeyDown: function(event) {
@@ -38,18 +38,18 @@ var TodoTextInput = React.createClass({
     },
 
     render: function() {
-        return ({
+        return (
             <input
-                className = this.props.className,
-                id = this.props.id,
-                value = this.state.value,
-                placeholder = this.props.placeholder,
-                autuFocus = {true},
-                onBlur: this._save,
-                onChange: this._onChange,
-                onKeyDown: this._onKeyDown,
+                className={this.props.className}
+                id={this.props.id}
+                value={this.state.value}
+                placeholder={this.props.placeholder}
+                autuFocus={true}
+                onBlur={this._save}
+                onChange={this._onChange}
+                onKeyDown={this._onKeyDown}
             />
-        });
+        );
     },
 });
 
