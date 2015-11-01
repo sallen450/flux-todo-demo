@@ -19,7 +19,7 @@ var TodoTextInput = React.createClass({
     },
 
     _save: function() {
-        this.proos.onSave(this.state.value);
+        this.props.onSave(this.state.value);
         this.setState({
             value: '',
         });
