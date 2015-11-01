@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('event').EventEmitter;
+var EventEmitter = require('events').EventEmitter;
 var TodoConstants = require('../constants/TodoConstants');
 var assgin = require('object-assign');
 
