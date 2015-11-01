@@ -22,14 +22,16 @@ var MainSection = React.createClass({
         }
 
         return (
-            <input
-                id="toggle-all"
-                type="checkbox"
-                onChange={this._onToggleCompleteAll}
-                checked={this.props.areAllComplete ? 'checked' : ''}
-            />
-            <label htmlFor="toggle-all">Mark all as complete</label>
-            <ul id="todo-list">{todos}</ul>
+            <div>
+                <input
+                    id="toggle-all"
+                    type="checkbox"
+                    onChange={this._onToggleCompleteAll}
+                    checked={this.props.areAllComplete ? 'checked' : ''}
+                />
+                <label htmlFor="toggle-all">Mark all as complete</label>
+                <ul id="todo-list">{todos}</ul>
+            </div>
         );
     },
 
