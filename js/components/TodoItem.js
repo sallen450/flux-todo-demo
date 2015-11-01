@@ -10,7 +10,7 @@ var TodoItem = React.createClass({
         todo: ReactPropTypes.object.isRequired,
     },
 
-    getInitState: function() {
+    getInitialState: function() {
         return {
             isEditing: false,
         }

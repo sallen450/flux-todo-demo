@@ -20,7 +20,7 @@ function _onChange() {
 };
 
 var TodoApp = React.createClass({
-    getInitState: function() {
+    getInitialState: function() {
         return getTodoState();
     },
 

@@ -12,7 +12,7 @@ var TodoTextInput = React.createClass({
         value: ReactPropTypes.string,
     },
 
-    getInitState: function() {
+    getInitialState: function() {
         return {
             value: this.props.value || '',
         }
