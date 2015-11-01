@@ -8,18 +8,18 @@ var TodoStore = require('../stores/TodoStore');
  * retrieve data from TodoStore
  */
 
-function getTodoState() {
-    return {
-        allTodos: TodoStore.getAll(),
-        areAllComplete: TodoStore.areAllComplete(),
-    }
-}
-
-function _onChange() {
-    this.setState(getTodoState());
-};
+ function getTodoState() {
+     return {
+         allTodos: TodoStore.getAll(),
+         areAllComplete: TodoStore.areAllComplete(),
+     }
+ }
 
 var TodoApp = React.createClass({
+    _onChange: function() {
+        this.setState(getTodoState());
+    },
+
     getInitialState: function() {
         return getTodoState();
     },
