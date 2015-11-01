@@ -1,5 +1,5 @@
 var React = require('react');
-var ReactPropTypes = React.propTypes;
+var ReactPropTypes = React.PropTypes;
 
 var ENTER_KEY_CODE = 13;
 
