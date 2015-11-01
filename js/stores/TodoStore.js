@@ -80,11 +80,11 @@ var TodoStore = assgin({}, EventEmitter.prototype, {
         this.emit(CHANGE_EVENT);
     },
 
-    addChangeEventListener: function(callback) {
+    addChangeListener: function(callback) {
         this.on(CHANGE_EVENT, callback);
     },
 
-    removeChangeEventListener: function(callback) {
+    removeChangeListener: function(callback) {
         this.removeListener(CHANGE_EVENT, callback);
     },
 });
