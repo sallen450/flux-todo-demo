@@ -1,0 +1,1 @@
+console.error("ReactifyError: /Users/jiqinghua/Workspace/github/sallen450/flux-todo-demo/js/components/TodoApp.js: Parse Error: Line 39: Adjacent XJS elements must be wrapped in an enclosing tag while parsing file: /Users/jiqinghua/Workspace/github/sallen450/flux-todo-demo/js/components/TodoApp.js");
