@@ -22,7 +22,7 @@ var MainSection = React.createClass({
         }
 
         return (
-            <div>
+            <section id="main">
                 <input
                     id="toggle-all"
                     type="checkbox"
@@ -31,7 +31,7 @@ var MainSection = React.createClass({
                 />
                 <label htmlFor="toggle-all">Mark all as complete</label>
                 <ul id="todo-list">{todos}</ul>
-            </div>
+            </section>
         );
     },
 
