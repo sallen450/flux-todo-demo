@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactPropTypes = React.PropTypes
 var TodoActions = require('../actions/TodoActions');
-var TotoTextInput = require('./TodoTextInput');
+var TodoTextInput = require('./TodoTextInput');
 
 var classNames = require('classnames');
 
