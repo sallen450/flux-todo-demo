@@ -46,6 +46,7 @@ var TodoItem = React.createClass({
                     <label onDoubleClick={this._onDoubleClick}>
                         {todo.text}
                     </label>
+                    <button className="destroy" onClick={this._onDestroyClick} />
                 </div>
                 {input}
             </li>
@@ -60,13 +61,12 @@ var TodoItem = React.createClass({
         this.setState({isEditing: true});
     },
 
-    _onSave: function() {
-        console.log(11);
+    _onSave: function(text) {
         TodoActions.updateText(this.props.todo.id, text);
         this.setState({isEditing: false});
     },
 
-    _onDistroyClick: function() {
+  _onDestroyClick: function() {
         TodoActions.destroy(this.props.todo.id);
     },
 });
